@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+<!-- 	<style 
+	    name="app_theme" 
+	    parent="android:Theme.NoTitleBar">
+		<item name="android:windowBackground">@drawable/app_background</item>
+	</style>	 -->
+	
+	<style name="customTheme" parent="android:Theme"> 
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>   
+    </style>
+    
+	<style name="WindowTitleBackground">     
+        <item name="android:background">@color/titlebackgroundcolor</item>                   
+    </style>
+    <style name="CaptureTheme" parent="android:Theme.Holo">
+	    <item name="android:windowFullscreen">true</item>
+	    <item name="android:windowContentOverlay">@null</item>
+	    <item name="android:windowActionBarOverlay">true</item>
+	    <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    
+     <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+    
+    <style name="AppTheme" parent="AppBaseTheme">
+    <item name="android:windowNoTitle">true</item>
+    </style>
+    
+          <style name="img_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/setting_arrow</item>
+        
+    </style>
+</resources> 

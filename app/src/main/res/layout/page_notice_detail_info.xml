@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120sp"
+    android:orientation="vertical"
+     android:paddingTop="30sp" 
+     android:background="@color/white_color">
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:id="@+id/notice_title"
+        android:layout_height="wrap_content"
+        android:text="各部门做好本月工作报告"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8sp"
+        />
+    
+    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16sp"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginRight="5sp"
+	        android:textSize="12sp"
+	        android:padding="5sp"
+	        android:singleLine="false"
+	        android:background="@drawable/textview_border_without_backcolor"
+	        android:id="@+id/notice_sender"
+	        android:text="发布人：XXXX   职称：来一个   发布时间：2107-4-23 11:11:11 \n 部门：来一个来一个来一个来一个"
+	           />
+    
+    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16sp"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginRight="5sp"
+	        android:padding="5sp"
+	        android:textSize="15sp"
+	        android:id="@+id/notice_content"
+	        android:lineSpacingMultiplier="1.2"
+	        android:singleLine="false"
+	        android:text="最近反复研究日常经典必用的几个Android app，从主界面带来的交互方式入手进行分析，我将其大致分为三类。今天记录第一种方式，即主界面下面有几个tab页，最上端是标题栏，tab页和tab页之间不是通过滑动切换的，而是通过点击切换tab页。早期这种架构一直是使用tabhost+activitygroup来使用，随着fragment的出现及google官方也大力推荐使用fragment，后者大有代替前者之势。本文也使用fragment进行搭建，标题中的“经典”指这种交互经典，非本文的代码框架结构，欢迎大家提出指出不足，帮助完善。文中的fragment部分参考了郭神的博文(链接1 链接2 链接3)，代码也是在郭神代码基础上加入了自己对框架的理解。"
+	           />
+    
+    <LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_gravity="bottom"
+android:layout_weight="0.1"
+android:gravity="bottom"
+android:orientation="vertical" >
+    <Button
+            android:id="@+id/notice_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" 
+            android:background="@color/blue_color"
+            android:textColor="@android:color/white"
+             android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/ok" />
+</LinearLayout>
+</LinearLayout>

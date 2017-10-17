@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:paddingTop="10sp"
+       android:paddingBottom="10sp"
+    android:orientation="horizontal" >
+     <!-- 查询结果显示区域 -->
+           <ImageView
+               android:id="@+id/car_info_pic_id"
+        android:layout_width="120sp"
+        android:layout_height="160sp"
+        android:paddingLeft="5sp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/car_info_pic"
+         />
+
+           <!-- 右边文字 -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingLeft="8sp" >
+	        
+	        <!-- 识别车牌 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/query_car_history_carNumber"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/car_info_car_number"
+	        android:text="粤B22222"
+	                />
+	        </LinearLayout>
+	        <!-- 识别时间 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="14sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/query_car_history_time"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/car_info_create_time"
+	        android:text="2017-04-22 12:12:12"
+	                />
+	        </LinearLayout>
+	        <!-- 比对结果 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="14sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/query_car_history_compare_result"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ff000b"
+	         android:id="@+id/car_info_compare_result"
+	        android:text="逾期未年检"
+	                />
+	        </LinearLayout>
+	        <!-- 录像文件 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="14sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/query_car_history_record_file"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/car_info_has_video"
+	        android:text="无"
+	                />
+	        </LinearLayout>
+	        <!-- 上报存档 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="14sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/query_car_history_upload"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/car_info_has_upload"
+	        android:textColor="#ff000b"
+	        android:text="未上报平台存档"
+	                />
+	        </LinearLayout>
+        </LinearLayout>
+        <ImageView style="@style/img_arrow"
+            android:layout_gravity="center"
+            android:contentDescription="@string/hello_world"
+            />
+          
+</LinearLayout>

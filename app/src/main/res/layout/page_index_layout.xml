@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip">
+    
+    <!-- 头像职务等上面部分 -->
+    <LinearLayout 
+          android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+     android:paddingTop="15sp"
+     android:layout_marginTop="10sp"
+     android:background="@drawable/linearlayout_boder"
+        >
+         <ImageView
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        android:layout_marginLeft="15sp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/ic_photo_1"
+         />
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingLeft="20sp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	           android:text="@string/name_position"
+	           android:id="@+id/index_name_position"
+	           android:textColor="@color/color_black"
+	            android:textSize="16sp" />
+	
+	        <TextView
+	            android:paddingTop="5sp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/depart"
+	             android:id="@+id/index_depart"
+	            android:textColor="@color/color_black"
+	            android:textSize="16sp" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <View  android:layout_height="0.5sp" 
+           android:layout_width="match_parent"
+           android:background="#ffffff"/>
+    
+    
+    <!-- 中间功能区，6个图标 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="5sp"
+        >
+
+        <ImageView
+            android:id="@+id/page_index_icon_car_xxqc_02"
+                android:layout_marginLeft="8sp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:adjustViewBounds="true"
+            android:maxHeight="80sp"
+            android:maxWidth="80sp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/icon_car_xxqc_02" />
+
+        <ImageView
+             android:id="@+id/page_index_icon_car_dxqc_01"
+               android:layout_marginLeft="45sp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:adjustViewBounds="true"
+            android:maxHeight="80sp"
+            android:maxWidth="80sp"
+             android:contentDescription="@string/hello_world"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_car_dxqc_01"
+             />
+        <ImageView
+             android:id="@+id/page_index_icon_car_jlc_16"
+             android:layout_marginLeft="45sp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:adjustViewBounds="true"
+            android:maxHeight="80sp"
+            android:maxWidth="80sp"
+             android:contentDescription="@string/hello_world"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_car_jlc_16"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="20sp"
+        >
+
+        <ImageView
+            android:id="@+id/page_index_icon_car_gc_15"
+               android:layout_marginLeft="8sp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:adjustViewBounds="true"
+            android:maxHeight="80sp"
+            android:maxWidth="80sp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/icon_car_gc_15" />
+
+        <ImageView
+             android:id="@+id/page_index_icon_car_qbmtc_08"
+           android:layout_marginLeft="45sp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:adjustViewBounds="true"
+            android:maxHeight="80sp"
+            android:maxWidth="80sp"
+             android:contentDescription="@string/hello_world"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_car_qbmtc_08"
+             />
+
+        <ImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginLeft="45sp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/hello_world"
+            android:maxHeight="80sp"
+            android:maxWidth="80sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_car_more" />
+
+    </LinearLayout>
+     <View  android:layout_height="0.5sp" 
+           android:layout_width="match_parent"
+           android:background="#ffffff"/>
+
+    <!-- 下面的待办事项部分 -->
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_notice"
+            android:background="@drawable/linearlayout_boder"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:padding="4sp"
+             android:layout_marginTop="10sp"
+             android:layout_marginBottom="3sp"
+             android:layout_marginLeft="50sp"
+            android:textSize="18sp" />
+     <View  android:layout_height="0.5sp" 
+         	android:layout_marginLeft="130sp"
+         	android:layout_marginTop="-20sp"
+           android:layout_width="match_parent"
+           android:background="@color/main_color"/>
+    <View  android:layout_height="0.5sp" 
+         	android:layout_marginLeft="5sp"
+         	android:layout_marginRight="300sp"
+           android:layout_width="match_parent"
+           android:background="@color/main_color"/>
+    
+<ListView
+    android:paddingTop="40sp"
+    android:id="@+id/page_index_listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/divider_color"
+    android:dividerHeight="1dip" >
+    
+</ListView>
+
+</LinearLayout>

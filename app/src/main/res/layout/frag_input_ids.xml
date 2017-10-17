@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_input_ids_owner_name"
+        />
+    
+    <EditText 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_input_ids_owner_name"
+        android:inputType="text"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_input_ids_car_number"
+        />
+    
+    <EditText 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_input_ids_car_number"
+        android:inputType="text"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_input_ids_illegal_type"
+        />
+    
+    <EditText 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_input_ids_illegal_type"
+        android:inputType="text"
+        />
+    
+    <Button 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_input_ids_button"
+        android:onClick="flagInputIdsSave"
+        />
+    
+    
+      <ListView 
+          android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frag_input_ids_all"
+       />
+
+</LinearLayout>

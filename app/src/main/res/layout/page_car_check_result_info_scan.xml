@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:paddingTop="30sp"
+       android:orientation="vertical"
+       android:background="@color/background_white_color"
+     >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/compare_result"
+        android:textSize="24sp"
+        android:textColor="@color/white_color"
+        android:gravity="center"
+        android:background="@color/main_color"
+        android:paddingBottom="8sp"
+        />
+    <!--  <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+     </LinearLayout> -->
+     
+      <TextView 
+	                 android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	         android:gravity="center_horizontal"
+	         android:id="@+id/result_scan_car_cctime"
+	        android:background="@color/back_ground"
+	        android:textSize="11sp"
+	          android:textColor="@color/color_black"
+	                />
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="16sp"
+        >
+     <!-- 查询结果显示区域 -->
+           <ImageView
+               android:id="@+id/car_info_pic_image_id"
+        android:layout_width="120sp"
+        android:layout_height="160sp"
+        android:paddingLeft="5sp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/ic_launcher"
+         />
+
+           <!-- 右边文字 -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingLeft="8sp" >
+	        
+	        <!-- 车牌号 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_number"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:textColor="@color/color_black"
+	         android:id="@+id/result_scan_car_number"
+	        android:text=""
+	                />
+	        </LinearLayout>
+	        <!-- 车辆类型 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="8sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_carType"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:textColor="@color/color_black"
+	         android:id="@+id/result_scan_car_carType"
+	        android:text=""
+	                />
+	        </LinearLayout>
+	        <!-- 车身颜色 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="8sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_color"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:textColor="@color/color_black"
+	         android:id="@+id/result_scan_car_color"
+	        android:text=""
+	                />
+	        </LinearLayout>
+	        <!-- 制造厂商 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="8sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_maker"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/result_scan_car_maker"
+	         android:textColor="@color/color_black"
+	        android:text=""
+	                />
+	        </LinearLayout>
+	        <!-- 车辆型号 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="8sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_type"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/result_scan_car_type"
+	         android:textColor="@color/color_black"
+	        android:text=""
+	                />
+	        </LinearLayout>
+	        <!-- 车架号 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="8sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_vin"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/result_scan_car_vin"
+	         android:textColor="@color/color_black"
+	        android:text=""
+	                />
+	        </LinearLayout>
+	        <!-- 发动机号 -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	         android:paddingTop="8sp"
+	            >
+	            <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compare_car_engine"
+	                />
+	             <TextView 
+	                 android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/result_scan_car_engine"
+	         android:textColor="@color/color_black"
+	        android:text=""
+	                />
+	        </LinearLayout>
+        </LinearLayout>
+       </LinearLayout>
+       
+      <!-- 比对结果 -->
+	     <LinearLayout 
+	            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="16sp"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginRight="5sp"
+	      android:background="@color/back_ground"
+	         >
+	        <TextView 
+	        android:layout_width="240sp"
+	        android:layout_height="wrap_content"
+	         android:id="@+id/result_scan_car_legal"
+	        android:text="@string/query_car_history_compare_result"
+	        android:lineSpacingMultiplier="1.5"
+	            />
+
+	        <Button
+	            android:layout_width="90sp"
+	            android:layout_height="30sp"
+	            android:layout_marginLeft="10sp"
+	            android:id="@+id/show_car_owner_info_btn"
+	            android:gravity="center_horizontal"
+	            android:layout_gravity="center_vertical"
+	            android:textSize="10sp"
+	            android:textColor="@color/color_black"
+	            android:background="@drawable/linearlayout_boder"
+	            android:text="@string/show_car_owner_info" />
+
+	     </LinearLayout>
+	       <TextView 
+	           android:visibility="invisible"
+	           android:id="@+id/show_car_owner_info_txt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16sp"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginRight="5sp"
+	        android:padding="5sp"
+	        android:singleLine="false"
+	        android:lineSpacingMultiplier="1.5"
+	        android:background="@drawable/textview_border_without_backcolor"
+	        android:text="车主姓名：XXXX  \n 身份证号：XXXX"
+	           /> 
+	           
+	       <LinearLayout
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:orientation="horizontal"
+	            android:layout_marginTop="14sp"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginRight="5sp"
+	            >
+			
+			<!--  <TextView 
+	           android:visibility="invisible"
+	           android:id="@+id/result_scan_car_serverId"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        /> -->
+
+			</LinearLayout>
+     <LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_gravity="bottom"
+android:layout_weight="0.1"
+android:gravity="bottom"
+android:orientation="horizontal" >
+			<!-- <Button
+            android:id="@+id/compare_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/blue_color"
+            android:textColor="@android:color/white"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/ok" /> -->
+            <Button 
+			    android:layout_marginLeft="6sp"
+			    android:id="@+id/result_scan_car_upload_image"
+			      android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10sp"
+	        android:paddingRight="10sp"
+	         android:textColor="@color/color_black"
+	            android:background="@drawable/linearlayout_boder"
+	        android:text="@string/compare_need_upload_info"
+			    />
+			
+			<Button 
+			     android:id="@+id/compare_button_ok"
+			    android:paddingLeft="30sp"
+			    android:paddingRight="30sp"
+			    android:layout_marginLeft="40sp"
+			      android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:textColor="@color/color_black"
+	            android:background="@drawable/linearlayout_boder"
+	        android:text="@string/continue_scan_car"
+			    />
+            
+</LinearLayout>
+          
+</LinearLayout>

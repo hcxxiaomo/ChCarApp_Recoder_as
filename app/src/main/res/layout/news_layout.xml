@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    
+     <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+        >
+        
+         <TextView 
+              android:layout_width="90sp"
+          android:layout_height="wrap_content"
+          android:text="@string/illeagl_item_tips"
+          android:textSize="14sp"
+           android:gravity="center_horizontal"
+             />
+         <TextView 
+             android:layout_width="90sp"
+          android:layout_height="wrap_content"
+          android:text="@string/illeagl_started_date"
+          android:textSize="14sp"
+          android:gravity="center_horizontal"
+             />
+         <TextView 
+             android:layout_width="90sp"
+          android:layout_height="wrap_content"
+          android:text="@string/illeagl_end_date"
+          android:textSize="14sp"
+           android:gravity="center_horizontal"
+             />
+         <TextView 
+             android:layout_width="90sp"
+          android:layout_height="wrap_content"
+          android:text="@string/illeagl_upload_item_tips"
+          android:textSize="14sp"
+           android:gravity="center_horizontal"
+             />
+        </LinearLayout>
+    <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+        >
+        
+       <!--  <Spinner 
+            android:id="@+id/illeagl_spinner_id"
+			 android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:prompt="@string/illeagl_item_tips"
+			android:textSize="14sp"
+            /> -->
+        
+        <Button 
+            android:id="@+id/illeagl_spinner_id"
+              android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:text="@string/illeagl_item_tips"
+			android:textSize="11sp"
+            />
+        <Button 
+            android:id="@+id/illeagl_started_date_id"
+              android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:text="@string/illeagl_started_date"
+			android:textSize="11sp"
+            />
+        
+        <Button 
+            android:id="@+id/illeagl_end_date_id"
+             android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:text="@string/illeagl_end_date"
+			android:textSize="11sp"
+            />
+        
+         <Button 
+            android:id="@+id/illeagl_upload_spinner_id"
+              android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:text="@string/illeagl_upload_item_tips"
+			android:textSize="11sp"
+            />
+        
+       <!--  <Spinner 
+            android:id="@+id/illeagl_upload_spinner_id"
+            android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:prompt="@string/illeagl_upload_item_tips"
+			android:textSize="14sp"
+			
+            /> -->
+    </LinearLayout>
+    <!-- 
+     android:background="#157ecb"
+            android:textColor="@android:color/white"
+     -->
+      <Button
+            android:id="@+id/illegal_car_check_history_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+           android:background="@drawable/linearlayout_boder"
+            android:gravity="center"
+            android:text="@string/query_car_check_history" />
+      
+       <ListView
+    android:paddingTop="5sp"
+    android:id="@+id/illegal_car_check_history_listview"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/divider_color"
+    android:dividerHeight="1dip" >
+        </ListView>
+
+
+</LinearLayout>
